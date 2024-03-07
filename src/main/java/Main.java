@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Cal cal = new Cal();
-        System.out.println(cal.addMe(12, 13));
-        System.out.println(cal.subMe(12, 13));
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter two numbers for calculations: ");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println(cal.addMe(a, b));
+        System.out.println(cal.subMe(a, b));
     }
 }
